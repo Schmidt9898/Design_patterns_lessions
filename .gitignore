@@ -1,0 +1,8 @@
+*.vscode*
+Lab1/cpp/
+Lab1/java/compositeEx1/.idea/
+*bin*
+*.DS_Store
+*.idea*
+testfolder/heloword/README.md
+*.iml
