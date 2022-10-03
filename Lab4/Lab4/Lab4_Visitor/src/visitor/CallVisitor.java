@@ -4,12 +4,14 @@ public class CallVisitor extends Visitor{
 
 	@Override
 	public void VisitRed(Red e) {
-		e.call();
+	    System.out.println("Red.eye");
+
 	}
 
 	@Override
 	public void VisitBlue(Blue e) {
-		e.call();
+	    System.out.println("Blue.eye");
+
 	}
 
 }
