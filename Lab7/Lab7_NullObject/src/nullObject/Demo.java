@@ -1,0 +1,27 @@
+package nullObject;
+
+public class Demo {
+
+	public static void main(String[] args) {
+		//Let's create a new phone book and add some records
+		PhoneBook book = new PhoneBook();
+		book.add(new People("Jozsi","1083 Bp, Prater u 50/a","+361886400"));
+		book.add(new People("Pisti","1083 Bp, Prater u 50/a","+361886402"));
+		book.add(new People("Géza","1088 Bp, Szentkirályi u 28","+3618483200"));
+		
+		//Let's find some people
+		People p = book.search("Jozsi");
+		if (p != null)
+			System.out.println(p.getName() + " " + p.getAddress() + " " + p.getNumber());
+		else
+			System.out.println("Noone found");
+		
+		p = book.search("Geza");
+		if (p != null)
+			System.out.println(p.getName() + " " + p.getAddress() + " " + p.getNumber());
+		else
+			System.out.println("Entry not found");
+
+	}
+
+}
