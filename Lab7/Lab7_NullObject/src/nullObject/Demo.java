@@ -11,17 +11,11 @@ public class Demo {
 		
 		//Let's find some people
 		People p = book.search("Jozsi");
-		if (p != null)
-			System.out.println(p.getName() + " " + p.getAddress() + " " + p.getNumber());
-		else
-			System.out.println("Noone found");
+		System.out.println(p.getName() + " " + p.getAddress() + " " + p.getNumber());
 		
 		p = book.search("Geza");
-		if (p != null)
-			System.out.println(p.getName() + " " + p.getAddress() + " " + p.getNumber());
-		else
-			System.out.println("Entry not found");
-
+		System.out.println(p.getName() + " " + p.getAddress() + " " + p.getNumber());
+		
 	}
 
 }
